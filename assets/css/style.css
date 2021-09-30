@@ -15,15 +15,21 @@ ol,ul {
 a {
   text-decoration: none; 
 }
+.text-beauty {
+  color: #77bf4f;
+}
 /** START Main style **/
 /** START navigation **/
+.banner-img {
+  min-height: 450px;
+}
 .header {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 9;
+  z-index: 9;   
 }
 .header .navbar-brand .logo {
   width: 140px;
@@ -59,6 +65,7 @@ a {
   outline: none;
   box-shadow: none;
 }
+
 @media (min-width:992px ) and (max-width:1399px ) { 
   .navigation .navbar-nav .nav-link {
     padding: .5rem .5rem;
@@ -76,4 +83,84 @@ a {
   position: relative;
   z-index: 1;
 }
+.banner-content {
+
+}
+.banner-content .banner-heading {
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  padding-top: 14%;
+}
+.banner-content .banner-text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #606060;
+  margin-bottom: 20px;
+}
+.banner-content .contect-now {
+  background: #77bf4f;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  font-weight: 700;
+}
+.banner-content .contect-now i {
+  transform: rotate(320deg);
+  margin-right: 5px;
+  font-size: 30px;
+}
+.shape-img {
+  width: 100%;
+}
+
+@media (max-width:1250px) {
+  .banner-content .banner-heading {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    padding-top: 8%;
+  }
+  .banner-content .contect-now {
+    background: #77bf4f;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    font-weight: 700;
+  }
+  .banner-content .contect-now i {
+    font-size: 22px;
+  }
+}
+@media (max-width:992px) {
+  .banner-content .banner-heading {
+    font-size: 2.2rem;
+  }
+  .banner-content .contect-now {
+    font-size: 16px;
+  }
+  .banner-content .banner-text {
+    font-size: 18px;
+  }
+}
+@media (max-width:575px) {
+  .banner-content .banner-heading {
+    padding-top: 12%;
+  }
+}
+@media (max-width:400px) {
+  .banner-content .banner-heading {
+    padding-top: 18%;
+  }
+  .banner-content .banner-text {
+    font-size: 14px;
+  }
+}
+
 /** END banner **/
