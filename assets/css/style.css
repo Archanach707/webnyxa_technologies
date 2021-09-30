@@ -1,4 +1,81 @@
-/** Main style **/
-h1 {
-  color: red;
+/** RESET **/
+button {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
 }
+form {
+  outline: none;
+  box-shadow: none;
+}
+ol,ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none; 
+}
+/** START Main style **/
+/** START navigation **/
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+.header .navbar-brand .logo {
+  width: 140px;
+}
+.navigation .navbar-nav .nav-link {
+  color: #212529;
+  font-weight: 700;
+  font-size: 18px;
+  padding: .5rem 1rem;
+}
+.navigation .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #77bf4f;
+}
+.header .get-quote-button {
+  background: #77bf4f;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+.header .get-quote-button i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.navbar-light .navbar-toggler {
+  color: #212529;
+  border: 2px solid #77bf4f;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+@media (min-width:992px ) and (max-width:1399px ) { 
+  .navigation .navbar-nav .nav-link {
+    padding: .5rem .5rem;
+  }
+}
+@media (min-width:992px ) and (max-width:1199px ) {
+  .navigation .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+/** END navigation **/
+
+/** START banner **/
+.banner {
+  position: relative;
+  z-index: 1;
+}
+.banner-inner {}
+.banner-inner {}
+/** END banner **/
